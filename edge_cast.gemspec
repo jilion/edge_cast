@@ -17,6 +17,6 @@ Gem::Specification.new do |s|
   s.add_dependency 'faraday_middleware', '~> 0.8'
 
   s.add_development_dependency 'rspec',   '~> 2.11'
-  s.add_development_dependency 'vcr',     '~> 2.2'
-  s.add_development_dependency 'webmock', '~> 1.8'
+  s.add_development_dependency 'vcr',     '~> 2.3'
+  s.add_development_dependency 'webmock', '~> 1.9'
 end

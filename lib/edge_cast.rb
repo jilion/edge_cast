@@ -1,3 +1,5 @@
+require 'active_support/core_ext/string'
+require 'active_support/core_ext/hash'
 require 'edge_cast/client'
 require 'edge_cast/config'
 

@@ -35,7 +35,7 @@ module ForReal
   end
 
   def self.credentials
-    yml[:credentials]
+    @credentials ||= yml[:credentials].symbolize_keys!
   end
 
   def self.yml

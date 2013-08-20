@@ -1,5 +1,3 @@
-require 'edge_cast/core_ext/string'
-
 module EdgeCast
   class Client
     module Media
@@ -14,7 +12,7 @@ module EdgeCast
 
           def wrap_field_per_media(response, field)
             (response.is_a?(Array) ? response : [response]).inject({}) do |hash, r|
-              Media.from_code(r['MediaTypeId'])[:keys].each { |key| hash[key] = r[field.camelize] }
+              Media.from_code(r['MediaTypeId'])[:keys].each { |key| hash[key] = r[field.to_s.camelize] }
               hash
             end
           end

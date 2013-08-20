@@ -1,4 +1,10 @@
-### 0.0.1 - 12 November, 2012
+## 0.0.2 - 20 August, 2013
+
+### Bug fix
+
+- Use ActiveSupport instead of monkey-patch Hash. ([@rymai][])
+
+## 0.0.1 - 12 November, 2012
 
 ### New features
 

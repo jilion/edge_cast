@@ -1,4 +1,5 @@
 # EdgeCast
+[![Gem Version](https://badge.fury.io/rb/edge_cast.png)](http://badge.fury.io/rb/edge_cast) [![Build Status](https://travis-ci.org/jilion/edge_cast.png?branch=master)](https://travis-ci.org/jilion/edge_cast)
 
 EdgeCast Web Services REST API Ruby wrapper.
 
@@ -6,15 +7,21 @@ EdgeCast Web Services REST API Ruby wrapper.
 
 Add this line to your application's Gemfile:
 
-    gem 'edge_cast'
+```ruby
+gem 'edge_cast'
+```
 
 And then execute:
 
-    $ bundle
+```bash
+$ bundle
+```
 
 Or install it yourself as:
 
-    $ gem install edge_cast
+```bash
+$ gem install edge_cast
+```
 
 ## Usage
 

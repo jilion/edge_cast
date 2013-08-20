@@ -1,3 +1,7 @@
+## 1.0.0 - 20 August, 2013
+
+No changes.
+
 ## 0.0.2 - 20 August, 2013
 
 ### Bug fix

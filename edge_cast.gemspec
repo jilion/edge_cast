@@ -13,8 +13,7 @@ Gem::Specification.new do |s|
   s.files        = Dir.glob('lib/**/*') + %w[CHANGELOG.md LICENSE README.md]
   s.require_path = 'lib'
 
-  s.add_dependency 'faraday',            '~> 0.8'
-  s.add_dependency 'faraday_middleware', '~> 0.8'
+  s.add_dependency 'faraday',            '~> 0.9'
   s.add_dependency 'activesupport',      '~> 4.0'
 
   s.add_development_dependency 'rspec',   '~> 2.14'

@@ -9,7 +9,7 @@ require 'edge_cast/error/unauthorized'
 module EdgeCast
   module Response
     class RaiseClientError < Faraday::Response::Middleware
-      Faraday.register_middleware :response, :client_error => lambda { RaiseClientError }
+      Faraday::Response.register_middleware :response, :client_error => lambda { RaiseClientError }
 
       def on_complete(env)
         case env[:status].to_i

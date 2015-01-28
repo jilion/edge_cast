@@ -6,7 +6,7 @@ require 'edge_cast/error/service_unavailable'
 module EdgeCast
   module Response
     class RaiseServerError < Faraday::Response::Middleware
-      Faraday.register_middleware :response, :server_error => lambda { RaiseServerError }
+      Faraday::Response.register_middleware :response, :server_error => lambda { RaiseServerError }
 
       def on_complete(env)
         case env[:status].to_i

@@ -3,7 +3,7 @@ require 'faraday'
 module EdgeCast
   module Request
     class Authorization < Faraday::Middleware
-      Faraday.register_middleware :request, :auth => lambda { Authorization }
+      Faraday::Request.register_middleware :request, :auth => lambda { Authorization }
 
       def initialize(app, api_token)
         @app, @api_token = app, api_token
